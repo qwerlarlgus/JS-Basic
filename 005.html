@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //데이터와 기능 둘다 수행하여 복잡쓰
+        //Object 오브젝트
+        let person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 40,
+            tel: "010xxxxxxxx",
+            email: "abc@mail.com"
+        };
+
+        // person.address = "foeof";
+
+        let firstName = "firstName";
+
+        console.log(person.firstname);
+        console.log(person.lastname);
+        console.log(person.age);
+
+        // // person.age = 41;
+        // // console.log(person.age);
+        // console.log(person["firstName"]);
+
+        // //let firstNameKey = "firstName";
+        // //console.log(person.firstNameKey);
+        // console.log(person[firstNameKey]);
+
+        let key = "firstName";
+        // let key = "lastName";
+        // let key = "age";
+
+        console.log(person[key]);
+    </script>
+</body>
+
+</html>

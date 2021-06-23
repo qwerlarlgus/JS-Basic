@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 조건(삼항) 연산자
+        var age = 19;
+        var isAdult = (age >= 18) ? true:false; 
+        //age가 19보다 같거나 큰가? true, 아니면 false
+        console.log(isAdult);
+
+        var point = 92;
+        var grade = (point >= 90) ? "A":(point >= 80) ? "B":"C";
+        //point가 90이상이면 A, 80이상이면 B, 80보다 작으면 C
+         console.log(grade);
+
+         var time = 8;
+         var greeting = (time <= 10) ? "Good morning!": (time <= 16) ? "Good afternoon": (time <= 20 ) ? "Good evening":"Good night";
+          
+        console.log(greeting);
+    </script>
+</body>
+
+</html>
