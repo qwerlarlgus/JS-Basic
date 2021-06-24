@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //조건문 - if
+        var age = 19;
+        var isAdult = false;
+
+        if(age >= 19 ) {
+            isAdult = true;
+        }
+
+        if(isAdult) {
+            //성인에 맞는 코드를 실행
+        }
+        else {
+            //isAdult == false, 무조건, else 블록 코드 실행
+        }
+
+        var age = 7;
+        var isFree = false;
+
+        if(age >= 70) {
+            ifFree = true;
+        }
+        else if (age < 8) {
+            isFree = true;
+        }
+        // else {
+        //   isFree = false;
+        // }
+
+        //문제1. 조건삼항 내용 if문으로 변경
+        //var greeting = (time <= 10) ? "Good morning!" : (time <=16) ? "Good afternoon" : (time <=20 ) ? "Good evening":"Good night";
+
+        //조건문 - switch
+          var d = new Date();
+          var day = d.getDay();
+          console.log("day", day);
+        // switch (key) {
+        //     case value:
+        // }
+    </script>
+</body>
+
+</html>

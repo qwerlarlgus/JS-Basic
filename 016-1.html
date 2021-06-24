@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //반복문
+        // var brands = ["애플", "구글", "페이스북", "아마존", "삼성","엘지"];
+        
+        // var(var index in brands) {
+        //     console.log(brands[index]);
+        // }
+
+        // for(var i = 0; i < brands.length; i++){ 
+        //     console.log(brands[i]); //애플,구글,페이스북,아마존,삼성
+        // }
+
+        // console.log(brans[0]);
+        // console.log(brans[1]);
+        // console.log(brans[2]);
+        // console.log(brans[3]);
+        // console.log(brans[4]);
+        
+        //for-loop
+        // for (코드1; 조건; 코드2){
+        //     //코드블록
+        // }
+        // brands.push("개발자의 품격");
+
+        // var length = brands.length; //for문의 반복으로인한 성능저하 방지
+
+        // for(var i = 0; i < brands.length; i++){
+        //     console.log(brands[i]); //애플,구글>,페이스북,아마존,삼성
+        // }
+
+        // //for-in
+        // let person = {
+        // firstname: "John",
+        // lastname: "Doe",
+        // age: 40,
+        // tel: "010xxxxxxxx",
+        // email: "abc@mail.com"
+        // }; //내용을 모를 때!!
+
+        // for (var key in person) {
+        //     // console.log(key);
+        //     console.log(key, person[key]); //person속 키값 불러오기
+        // }
+
+        // //for-of
+        // for (var brand of brands) {
+        //     console.log(brand);
+        // }
+
+        // var lang = "JavaScript";
+        // for(var c of lang) {
+        //     console.log(c);
+        // }
+
+    </script>
+    
+    <!-- <script src="user_data.js"></script> -->
+    <script>
+        //문제1. userList의 데이터에서 gender가 male 인 
+        //사람만 새 배열 maleUserLIst에 담고 콘솔창에 출력
+
+        // var maleUserLIst = [] ;
+        // for (var user of userList) {
+        //     if (user.gender == "male") {
+        //         maleUserLIst.push(user);
+        //     }
+        // }
+
+        // console.table(maleUserLIst);
+
+
+        // var maleUserLIst = [] ;
+        // for (var user of userList) {
+        //     if (user["age"] > 35) {
+        //         maleUserLIst.push(user);
+        //      }
+        // }
+
+        // console.table(maleUserLIst);
+
+        
+        // console.table(userList.filter(u => u.gender == "male"));
+        // console.table(userList.filter(u => u.age == "24"));
+
+        // 나중에 배움
+
+        //문제2. 음료자판기 문제. productList에서  
+        //inputCoin으로 구매할 수 있는 음료 목록을 출력
+        
+        var productList = [
+            {
+                name: "솔의눈",
+                price: 700
+            },
+            {
+                name: "커피",
+                price: 700
+            },
+            {
+                name: "파워에이드",
+                price: 1200
+            },
+            {
+                name: "오렌지",
+                price: 1000
+            },
+            {
+                name: "보리차",
+                price: 1200
+            },
+            {
+                name: "밀키스",
+                price: 800
+            }
+        ];
+
+        var inputCoin = 800;
+
+        var output = [];
+        for (var product of productList) {
+            if (product.price <= inputCoin) {
+                output.push(product);
+            }
+        }
+        console.table(output);
+
+        // console.table(productList.filter(i => i.price == "800"));
+        // 해당 금액'만' 가능    
+    </script>
+</body>
+
+</html>
