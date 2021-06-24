@@ -62,7 +62,7 @@
 
     </script>
     
-    <!-- <script src="user_data.js"></script> -->
+    <script src="user_data.js"></script>
     <script>
         //문제1. userList의 데이터에서 gender가 male 인 
         //사람만 새 배열 maleUserLIst에 담고 콘솔창에 출력
@@ -87,53 +87,79 @@
         // console.table(maleUserLIst);
 
         
-        // console.table(userList.filter(u => u.gender == "male"));
-        // console.table(userList.filter(u => u.age == "24"));
+        console.table(userList.filter(u => u.gender == "male"));
+        console.table(userList.filter(u => u.age == "24"));
 
         // 나중에 배움
 
         //문제2. 음료자판기 문제. productList에서  
         //inputCoin으로 구매할 수 있는 음료 목록을 출력
         
-        var productList = [
-            {
-                name: "솔의눈",
-                price: 700
-            },
-            {
-                name: "커피",
-                price: 700
-            },
-            {
-                name: "파워에이드",
-                price: 1200
-            },
-            {
-                name: "오렌지",
-                price: 1000
-            },
-            {
-                name: "보리차",
-                price: 1200
-            },
-            {
-                name: "밀키스",
-                price: 800
-            }
-        ];
+        // var productList = [
+        //     {
+        //         name: "솔의눈",
+        //         price: 700
+        //     },
+        //     {
+        //         name: "커피",
+        //         price: 700
+        //     },
+        //     {
+        //         name: "파워에이드",
+        //         price: 1200
+        //     },
+        //     {
+        //         name: "오렌지",
+        //         price: 1000
+        //     },
+        //     {
+        //         name: "보리차",
+        //         price: 1200
+        //     },
+        //     {
+        //         name: "밀키스",
+        //         price: 800
+        //     }
+        // ];
 
-        var inputCoin = 800;
+        // var inputCoin = 800;
 
-        var output = [];
-        for (var product of productList) {
-            if (product.price <= inputCoin) {
-                output.push(product);
-            }
-        }
-        console.table(output);
+        // var output = [];
+        // for (var product of productList) {
+        //     if (product.price <= inputCoin) {
+        //         output.push(product);
+        //     }
+        // }
+        // console.table(output);
 
         // console.table(productList.filter(i => i.price == "800"));
         // 해당 금액'만' 가능    
+
+        // var inputPrice = 10000;
+        // var coinUnit = 500;
+        // var coinCount = 0;
+        // while(inputPrice > 0) {
+        //     inputPrice = inputPrice - coinUnit
+        //     coinCount++;
+        //     }
+
+        // // while문, do-while문
+        // var i = 11;
+        // var point = 0;
+
+        // while (point <= 100) {
+        //     //코드작성
+        //     point += 4;
+        //     console.log(i);
+        //     // i++;
+        // }
+        
+        // var i = 11;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // }   while(i <= 10);
+
     </script>
 </body>
 

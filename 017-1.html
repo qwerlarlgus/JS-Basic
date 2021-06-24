@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //함수
+    // function c
+
+    // function add(n1, n2) {
+    //     let y = n1 + n2;
+    //     return y;
+    // }
+
+    // function getFullName(firstName, lastName) {
+    //     return firstName + " " + lastName;
+    // }
+
+    //     getFullName("John", "Doe");
+
+    // let sum = add(10, 4);
+    // console.log(sum);
+
+    // console.log(add(12, 7));
+    // console.log(add(43, 3));
+
+    // console.log(add(10 + 4));
+    // console.log(add(12 + 7));
+
+    //함수 선언
+    //함수 이름 getProductList
+    //파라미터 inputCoin
+    //inputCoin으로 구매할 수 있는 음료 목표를
+    //productLIst 배열에서 추출해서 새로운 배열 만든 값을
+    //return 하고
+    //받는 쪽에선 var,let outputList =
+    //console.table(outputList);
+
+    // var productList = [
+    //         {
+    //             name: "솔의눈",
+    //             price: 700 },
+    //         {
+    //             name: "커피",
+    //             price: 700 },
+    //         {
+    //             name: "파워에이드",
+    //             price: 1200 },
+    //         {
+    //             name: "오렌지",
+    //             price: 1000 },
+    //         {
+    //             name: "보리차",
+    //             price: 1200 },
+    //         {
+    //             name: "밀키스",
+    //             price: 800  }
+    //     ];
+
+    // function getProductList(inputList) {
+    //     let outputList = [];
+    //     for(let product of productList) {
+    //         if(product.price <= inputCoin) {
+    //             outputList.push(product);
+    //         }
+    //     }
+    //     return outputList;
+    // }
+
+    // let output = getProductList(800);
+    // console.table(output);
+
+
+    // let getProduct = (inputCoin) => productList.filter(p => p.price <= inputCoin)
+
+
+        // var inputCoin = 800;
+
+        // function getProductList(inputCoin, outputCoin) {
+        //     return inputCoin + " " + outputCoin;
+        // }
+        //         getProductList("name", "price");
+
+        // let = outputList(inputCoin, name);
+
+        // console.table(outputList);
+    </script>
+
+
+        <!-- //문제3. 사용자 리스트에서 gender 파라미터를 받고 male, female 해당하는
+        //데이터만 반환하기
+        //함수명 UserList
+        //파라미터명 gender
+        //return outputUserList
+        //호출 getUserList("male");
+        //호출 getUserList("female"); -->
+
+    <!-- <script src="user_data.js"></script> -->
+    <script>
+        // var maleUserLIst = [] ;
+        // for (var user of userList) {
+        //      if (user.gender == "male","female") {
+        //          maleUserLIst.push(user);
+
+
+        // console.table(userList.filter(u => u.gender == "male"));
+        // console.table(userList.filter(u => u.gender == "female"));
+
+        // console.table(userList.filter(u => u.age == "24"));
+
+
+        //문제4. 계산기 만들기. 숫자 2개에 대한 더하기/빼기/곱하기/나누기를 수행하는 함수
+        //파라미터로 숫자 2개와 operator인 +,-,*,/를 입력받고 계산 수행
+        //함수명 calculator
+        //파라미터명 n1, n2, operator
+        //return 계산된 값
+
+        //  function calculator(n1, n2, operator) {
+        //     if(operator == "+") {
+        //          return n1 + n2;
+        //      }
+        //     else if(operator == "-") {
+        //          return n1 - n2;
+        //      }
+        //     else if(operator == "*") {
+        //         return n1 * n2;
+        //      }
+        //     else if(operator == "/") {
+        //         return n1 / n2;
+        //      }
+        //  }
+
+        //   var plus = calculator(5, 7, "+");
+        //   console.log(plus); //12
+
+        //   var minus = calculator(7, 5, "-");
+        //   console.log(minus); //2
+
+        //   var multiple = calculator(5, 7, "*");
+        //   console.log(multiple); //35
+
+        //   var divide = calculator(10, 2, "/");
+        //   console.log(divide); //5
+
+
+
+    //  function add(n1, n2) {
+    //      return n1 + n2;
+    //  }
+    //  function minus(n1, n2) {
+    //  return n1 - n2;
+    //  }
+    //  function multiple(n1, n2) {
+    //  return n1 * n2;
+    //  }
+    //  function divide(n1, n2) {
+    //  return n1 / n2;
+    //  }
+
+    //  console.log(calculator(4, 7, "+"));
+    //  console.log(calculator(4, 7, "*"));
+
+
+        //공격당하기 좋은 코드 권장XX, 프로그램 코드로 인식, 문자로 계산가능
+    function calculator2(n1, n2, operator) {
+        return eval(n1 + operator + n2);
+    }
+    //eval 자체가 실행하기 떄문에 악성코드역시 자동 실행
+
+    </script>
+</body>
+
+</html>
+
