@@ -87,17 +87,32 @@
         // let = outputList(inputCoin, name);
 
         // console.table(outputList);
+
+
+
+        // //문제3. 사용자 리스트에서 gender 파라미터를 받고 male, female 해당하는
+        // 데이터만 반환하기
+        // 함수명 UserList
+        // 파라미터명 gender
+        // return outputUserList
+        // 호출 getUserList("male");
+        // 호출 getUserList("female"); -->
+
+        // function getUserList(gender, age) {
+        //     var outputList = {};
+        //     for (var user of userList) {
+        //         if (user.gender == gender && (user.age >= fromAge && user.age <= toAge)) {
+        //             outputList.push(user);
+        //         }
+        //     }
+        //     return outputList;
+        // }
+
+        // let maleUserLIst = getUserList("male", 25, 30);
+        // console.table(maleUserList);
+
+
     </script>
-
-
-        <!-- //문제3. 사용자 리스트에서 gender 파라미터를 받고 male, female 해당하는
-        //데이터만 반환하기
-        //함수명 UserList
-        //파라미터명 gender
-        //return outputUserList
-        //호출 getUserList("male");
-        //호출 getUserList("female"); -->
-
     <!-- <script src="user_data.js"></script> -->
     <script>
         // var maleUserLIst = [] ;
@@ -165,13 +180,91 @@
 
 
         //공격당하기 좋은 코드 권장XX, 프로그램 코드로 인식, 문자로 계산가능
-    function calculator2(n1, n2, operator) {
-        return eval(n1 + operator + n2);
-    }
+    // function calculator2(n1, n2, operator) {
+    //     return eval(n1 + operator + n2);
+    // }
     //eval 자체가 실행하기 떄문에 악성코드역시 자동 실행
+
+
+
+        //문제. 배열안에 배열. for-loop
+        //함수
+        //함수명 - printArray
+        //파라미터 - 배열
+        //출력 -  console.log
+
+        // var arr =  [
+        //     [1,2,3,4,5],
+        //     [3,12,33,24,15],
+        //     [4,7,12,3,9],
+        //     [12,32,56,23,90],
+        //     [5,9,7,21,19]
+        // ];
+
+        // function printArray(arr20) {
+        //     let len1 = arr2D.length; //6
+
+        //     for(let i=0; i<len1; i++) {
+
+        //         let arr1 = arr3D[i]; //arr2D[0] //[1,2,3,4,5]
+        //         //arr2D[1] //[3,12,33,24,15,23]
+
+        //         let len2 = arr1.length; //5
+
+        //         for(let j = 0; j<len2; j++) {
+        //             //arr1[0] //1
+        //             //arr1[1] //2
+        //             // [1,2,3,4,5][0]
+        //             console.log(arr1[j]);
+        //         }
+        //     }
+        // }
+    </script>
+
+    <script src="user_data.js"></script>
+    <script>
+
+        //문제.
+        //나이 총합 - getUserAgeSum
+        //나이 평균 - getUserAgeAvg
+        //고연령자 - getUserAgeMax
+        //저연령자 - getUserAgeMin
+        //함수명
+        //파라미터 X
+        //출력
+
+        //전체기능 - getUserAgeMath
+
+        function getUserAgeMath() {
+            let sum = 0;
+            let maxAge = 0;
+            let minAge = Number.MAX_SAFE_INTEGER;
+
+            for(var user of userList) {
+                sum += user.age;
+
+                if(user.age > maxAge) {
+                    maxAge = user.age;
+                }
+
+                if (user.age < minAge) {
+                    minAge = user.age;
+                }
+            }
+
+            let avg = sum / userList.length;
+
+            return {  //아래 좌우가 같다면 키을 선언할 필요가 없음
+                sum : sum,  //sum 만 가능 변수와 동일하다 판단
+                avg : avg,  //avg
+                maxAge : maxAge, //maxAge
+                minAge : minAge  //minAge
+            }
+        }
+        let userMath = getUserAgeMath();
+        console.table(userMath);
 
     </script>
 </body>
 
 </html>
-
