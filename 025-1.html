@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    window.open("https://naver.com");
+
+    setTimeout(function(){
+      console.log("5초후 프로그램 종료");
+          }, 5000);
+
+    var i = 0;
+
+    var fnc = setInterval(function(){
+      console.log("3초마다 프로그램 실행 - " + i);
+      if(i == 3) {
+        clearInterval(fnc);
+      }
+      i++;
+    }, 5000);
+  </script>
+</body>
+
+</html>
