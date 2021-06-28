@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="user_data.js"></script>
+    <script>
+        var oUser = {};
+        // oUser["female'] = 1;
+
+
+        // oUser = {
+        //     "female" : 1,
+        //     "male" : 1
+        // }
+
+        // for(var user of userList){
+        //     if(oUser[user.gender]) {
+        //         oUser[user.gender] += 1;
+        //          //oUser["female"] = 2; 3인덱스
+        // } else {
+        //    oUser[user.gender] = 1; //0인덱스
+        //    //oUser["female"] = 1;  //1인덱스
+        //     }
+        // }
+
+        // console.table(oUser);
+
+
+
+        //Map, object와 비교하며 확인
+    //     var key1 = {"keyname":2};
+    //     var key2 = [2,3,4,5];
+
+    //     var myMap = new Map();
+    //     myMap.set("female", 1); //"female" => key1, key2
+    //     console.log(myMap.get("female")); //"female" => key2
+
+    //     for (var user of userList) {
+
+    //         if (myMap.has(user.gender)) {
+    //             myMap.set(user.gender, myMap.get(user.gneder)+1);
+    //         } else {
+    //             myMap.set(user.gender, 1);
+    //         }
+    //     }
+    //      myMap.forEach(function(value, key){
+    //          console.log(key);
+    //      })
+
+
+
+        // console.log(myMap.delete("female"));
+        // console.log(myMap.clear());
+        // console.log(myMap.keys());
+        // console.log(myMpa.values());
+
+        // for(var user of userList) {
+        //     if (oUser[user.gender]) {
+        //         oUser[user.gender] += 1;
+        //     } else {
+        //         oUser[user.gender] = 1;
+        //     }
+        // }
+
+
+
+        // const apples = {
+        //     name: "Apples"
+        // };
+
+        // myMap.set(apples, 1200);
+
+        // console.log(myMap.get(apples));
+
+
+
+        // //set 객체
+        // var arr = [];
+        // //var arr = new Array();
+        // arr.push(1);
+        // arr.push(3);
+
+        // var mySet = new Set();
+        // mySet.add(1);
+        // mySet.add(3);
+        // mySet.add(12);
+        // mySet.add(3);  //set은 동일값이 안됨 자동으로 add 안함, 유일한 값만 가능
+        // mySet.has(3)
+
+        // mySet.delete(3);
+
+
+
+        //Map 객체 이용
+        //userList에 있는 사용자 정보 중 age를 이용하여
+        //각 연령대 별로 몇명의 사용자가 있는지 확인하는 프로그램 작성
+        //함수명 - getAgeGroup()
+        //return - 각 연령대 별로 몇명 있는지
+        //slice, substring 가능
+
+        //Case1, table ㄴㄴㄴㄴㄴ
+        // function getAgeGroup() {
+        //     let userAgeMap = new Map();
+        //     userAgeMap.set("10g", 0);
+        //     userAgeMap.set("20g", 0);
+        //     userAgeMap.set("30g", 0);
+
+        //     for(var user of uerList) {
+        //         if(user.age >= 20 && user.age < 30) {
+        //             userAgeMap.set("20g", userAgeMap.get("20g") + 1);
+        //         } else if(user.age >= 30 && user.age < 40) {
+        //             userAgeMap.set("30g", userAgeMap.get("30g") + 1);
+        //         } else if(user.age >= 40) {
+        //             userAgeMap.set("40g", userAgeMap.get("40g") + 1);
+        //         }
+
+        //     }
+        //     return userAgeMap;
+        //     }
+
+
+        //case2
+        // function getAgeGroup2() {
+        //     let userAgeGroup = new Map();
+
+        //     for (var user of userList) {
+        //         //"25"
+        //         //"24"
+        //         var ageGroup = user.age.toString().charAt(0) + "0"; //"20"
+
+        //         if(userAgeGroup.has(ageGroup)) {
+        //             userAgeGroup.set(ageGroup, userAgeGroup.get(ageGroup) +1);
+        //         } else {
+        //             //0인덱스
+        //             //userAgeGroup.set("20", 1);
+        //             //userAgeGroup.set("30", 1);
+        //             userAgeGroup.set(ageGroup, 1);
+        //         }
+        //     }
+        //     return userAgeGroup;
+        // }
+
+        //case3 object로 시작
+       function getAgeGroup3() {
+            let userAgeGroup = {};
+
+            for (var user of userList) {
+                //"25"
+                //"24"
+                //"36"
+                var ageGroup = user.age.toString().charAt(0) + "0"; //"20"
+                   "30"
+                if(userAgeGroup.has(ageGroup)) {
+                    userAgeGroup.set[ageGroup] = userAgeGroup.get[ageGroup] +1;
+                } else {
+                    //0인덱스
+                    //userAgeGroup.set("20", 1);
+                    //userAgeGroup.set("30", 1);
+                    userAgeGroup.set[ageGroup, 1];
+                }
+            }
+            return userAgeGroup;
+        }
+
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
