@@ -2,24 +2,22 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        // 논리 연산자 AND &&, OR ||
-        var x1 = true && true; //AND - &&. OR - ||
-        console.log(x1);
-        // var x2 = true && false;
-        // console.log(x2);
+  <script>
+    var x1 = true && true; //AND - &&, OR - ||
+    console.log(x1);
+    var age = 7;
+    // var age2 = 9;
 
-        var age1 = 7;
-        // var age2 = 9;
+    // var x2 = (age1 > 70) && (age2 < 8);
+    var x2 = (age > 70) || (age < 8);
 
-        // var x2 = (age1 > 70) && (age2 < 8);
-        var x2 = (age1 > 70) || (age2 < 8);
 
-    </script>
+    console.log(x2);
+  </script>
 </body>
 
 </html>

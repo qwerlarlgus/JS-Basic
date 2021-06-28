@@ -1,1 +1,1 @@
-document.write("자바스크립트 js파일에 위치<br>");
+document.write("<h1>별도 파일에서 출력하는 자바스크립트3</h1>");

@@ -2,29 +2,36 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        var person = {
-            firstName : "Join",
-            lastName : "Doe",
-            // getFullName : function() {
-            //     return this.firstName + " " + this.lastName;
-            // }
-        };
+  <script>
+    var person = {
+      firstName: "John",
+      lastName: "Doe"
+      // getFullName: function () {
+      //   return this.firstName + " " + this.lastName;
+      // }
+    };
 
-              
-        person.firstName = ""
-        person.getFullName + function () {
-            return this.firstName + " " + this.lastName;
-        }
+    var person = {};
 
-        console.log(person.getFullName());
-        //???????????????????
+    var person = new Object();
+    person.firstName = "John";
+    person.lastName = "Doe";
+    person.getFullName = function () {
+      return this.firstName + " " + this.lastName;
+    }
 
-    </script>
+    // person.firstName = ""
+
+    // person.getFullName = function () {
+    //   return this.firstName + " " + this.lastName;
+    // }
+
+    // console.log(person.getFullName());
+  </script>
 </body>
 
 </html>

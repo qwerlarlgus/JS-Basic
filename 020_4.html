@@ -6,15 +6,9 @@
 </head>
 
 <body>
+  <script src="scripts/moment.min.js"></script>
   <script>
-    var x = 10;
-    // x = x + 1;
-    // x += 1;
-    x--;
-    x++;
-
-    console.log(x);
-    console.log(x++);
+    console.log(moment().add(2, "day").format("MMM Do YYYY"));
   </script>
 </body>
 

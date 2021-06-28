@@ -2,23 +2,33 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        // 핵심!! 여러개의 데이터를 분석적으로 표현한 것
-        let cars = ["볼보", "현대자동차", "벤츠", "기아"];
-        //let cars = [3, "현대자동차", person, "기아"];
-        console.log(cars[0]); //배열은 0부터 시작
-        console.log(cars[1]);
+  <script>
+    // let person = {
 
-        cars[0] = "아우디";
-        console.log(cars[0]);
+    // };
 
-        cars.push("쌍용"); // 맨 뒤에 삽입
-        let cars2 = [];
-        </script>
+    let cars = ["볼보", "현대자동차", "벤츠", "기아"];
+    console.log(cars[0]);
+    console.log(cars[1]);
+
+    cars[0] = "아우디";
+    console.log(cars[0]);
+
+    cars[4] = "볼보";
+    cars[5] = "볼보";
+
+    console.log(cars);
+
+
+    cars.push("쌍용");
+    cars.push("쌍용2");
+
+    let cars2 = [];
+  </script>
 </body>
 
 </html>

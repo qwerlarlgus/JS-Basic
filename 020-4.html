@@ -145,15 +145,21 @@
         // }
 
         //case3 object로 시작
-       function getAgeGroup3() {
+       function getAgeGroup3(users, keyAge) {
             let userAgeGroup = {};
 
             for (var user of userList) {
+                var ageGroup = "";
+                if(user[keyage] < 10) {
+                    ageGroup = "0";
+                }else if(user[keyage] >= 100) {
+                    ageGroup = user[keyage].toString().substr(0, 2) + "0";
+                } else {
+                    ageGroup = user[keyage].toString().charAt(0) + "0";
+                }
                 //"25"
                 //"24"
                 //"36"
-                var ageGroup = user.age.toString().charAt(0) + "0"; //"20"
-                   "30"
                 if(userAgeGroup.has(ageGroup)) {
                     userAgeGroup.set[ageGroup] = userAgeGroup.get[ageGroup] +1;
                 } else {
