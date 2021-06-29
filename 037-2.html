@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+    //     //async  비동기방식이다 주로 사용됨 async엔 await이 무조건 포함
+        const url = "https://50558dfd-214c-480b-a416-65ad24aab354.mock.pstmn.io/";
+       
+    //     // var data =axios.get(url);
+    //     // console.log(data);
+        
+
+        function getData() {
+            return new Pronmise(function (resolve, reject) {
+
+                reject(new Error("Request is failed"));
+                axios.get(url).then(function (response) {
+                    resolve(response.data);
+                });
+            });
+        }
+
+        getData().then(function (jsonData) {
+            console.log(jsonData.data);
+        }).catch(function(err){
+            console.log(err);
+        });
+
+
+    //    async function api(url) {
+    //        return (await axios.get(url)).data;
+    //    }
+
+    //    async function getData(path) {
+    //        var data = (await api(url + path));
+    //        console.log(path,data);
+    //    }
+
+    //    getData("getUserList");
+
+
+    //    async function getUserLIst() {
+    //        var data = (await api(url) + "/getUSerList"));
+    //        console.log(data);
+    //    }
+    //    getData("getUserList");   
+
+
+    // 유저리스트 포스트맨에 추가하여 확인   
+    //    async function getDrinkLIst() {
+    //        var data = (await api(url) + "/getDrinkList"));
+    //        console.log(data);
+    //    }
+    //    getData("getDrinkList");
+
+
+    // fetch(url+ "getUSerList").then(function (response) {
+    //     return response.json();
+    // }).then(function (data) {
+    //     console.log(data);
+    // });
+    </script>
+</body>
+
+</html>
