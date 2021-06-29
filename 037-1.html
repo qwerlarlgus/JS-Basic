@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        //promise
+        const url = "https://50558dfd-214c-480b-a416-65ad24aab354.mock.pstmn.io/getUserList";
+       
+        // var data =axios.get(url);
+        // console.log(data);
+        
+        function getData() {
+            return new Promise(function(resolve, reject) {
+                axios.get(url).then(function(response) {
+                    resolve(response.data);
+                });
+            });
+        }
+
+        getData().then(function (data) {
+            console.log(data);
+        });
+
+        //Mock 서버, 가상서버 굉장히 중요
+        // var url = "https://50558dfd-214c-480b-a416-65ad24aab354.mock.pstmn.io/getUserList";
+
+        // var data = axios.get(url);
+        // console.log("data", data);
+
+        // // function getData() {
+        //     return new Promis(function resolve,reject) {
+        //         axios.get(url).then(function (response) {
+        //             resolve(response.data);
+        //         });
+        //     });
+        // }
+
+        // getData().then(function (data) {
+        //     console.log(dat);
+        // });
+    </script>
+</body>
+
+</html>
