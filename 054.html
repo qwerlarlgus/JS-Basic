@@ -2,35 +2,33 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <input type="text" name="" id="txt1" value="">
-    <input type="text" name="" id="txt2" value="">
-    <button onclick="getInputValue">값 가져오기</button>
-    <button onclick="setInputValue">값 넣어주기</button>
-    <button onclick="sum()">더하기</button>
-    <script>
-        function sum() {
-            var ele = document.getElementById("txt1");
-            var ele2 = document.getElementById("txt2");
+  <input type="text" name="feef" id="txt1" value="">
+  <input type="text" name="feef" id="txt2" value="">
+  <button onclick="getInputValue();">값 가져오기</button>
+  <button onclick="setInputValue();">값 넣어주기</button>
+  <button onclick="sum();">더하기</button>
+  <script>
+    function sum() {
+      var ele = document.getElementById("txt1");
+      var ele2 = document.getElementById("txt2");
 
-            console.log(parseInt(ele.value) + parseInt(ele2.value));
-        }
+      console.log(parseFloat(ele.value) + parseFloat(ele2.value));
+    }
 
-        //무조건 문자값을 넣어주어야 함
-        function getInputValue() {
-            var ele = document.getElementById("txt1");
-            console.log(ele.value);
-            // console.log(ele.getAttribute("value")); //value만 못가져옴.. id와 name가능
-        }
+    function getInputValue() {
+      var ele = document.getElementById("txt1");
+      console.log(ele.name);
+    }
 
-        function setInputValue() {
-            var ele = document.getElementById("txt1");
-            ele.value = "ABC";
-        }
-    </script>
+    function setInputValue() {
+      var ele = document.getElementById("txt1");
+      ele.name = "abc";
+    }
+  </script>
 </body>
 
 </html>

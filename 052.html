@@ -2,26 +2,32 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        function add(n1, n2) {
-            if(n1 != undefined && n2 != undefined) {
-                return n1 + n2;
-            }else {
-                return 0;
-            }
-            //코드
-            return n1 + n2;
-        }
+  <script>
+    function add(n1, n2) {
+      if (n1 != undefined && n2 != undefined) {
+        return n1 + n2;
+      } else {
+        return 0;
+      }
+    }
 
-        var sum = add(3);
+    function add2(n1, n2) {
+      if (n1 == undefined || n2 == undefined) {
+        return 0;
+      }
 
-        console.log(sum);
+      //코드
+      return n1 + n2;
+    }
 
-    </script>
+    var sum = add2(3);
+
+    console.log(sum);
+  </script>
 </body>
 
 </html>

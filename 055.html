@@ -2,13 +2,11 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        
-
+  <script>
     let drinkList = [{
         drinkId: "1",
         drinkName: "코카콜라",
@@ -53,34 +51,26 @@
       }
     ];
 
-    // for(var i=0; i<drinkList.length; i++) {
-    //     if (drinkList[i].price <= 1000) {
-    //         console.log(drinkList[i]);
-    //     }
+    // for (var i = 0; i < drinkList.length; i++) {
+    //   if (drinkList[i].price <= 1000) {
+    //     console.log(drinkList[i]);
+    //   }
     // }
 
-    // for (var rink of drinkList) {
-    //     if (drink.price <= 1000) {
-    //         console.log(drink);
-    //     }
+    // for (var drink of drinkList) {
+    //   if (drink.price <= 1000) {
+    //     console.log(drink);
+    //   }
     // }
 
-    drinkList.filter(function(drink) {
-        if(drink.price <= 1000) {
-            return true;
-        }else {
-            return false;
-        }
-        
-            // return drink.price ,= 1000;
-        });
-         //내장함수 필터 숫자,문자 XX 함수를 만들어서 던져주는 방식
-        var drinks = drinkList.filter((drink) => drink.price <= 1000);
+    // var drinks = drinkList.filter(function (drink) {
+    //   return drink.price <= 1000;
+    // });
 
+    var drinks = drinkList.filter((drink) => drink.price <= 1000);
 
-        console.log(drinks);
-
-    </script>
+    console.log(drinks);
+  </script>
 </body>
 
 </html>

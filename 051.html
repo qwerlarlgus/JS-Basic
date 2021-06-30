@@ -2,32 +2,34 @@
 <html>
 
 <head>
-    <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
+  <script>
     var d = new Date();
-    console.log(d);
+    // console.log(d);
     var year = d.getFullYear();
     var month = d.getMonth() + 1;
     var day = d.getDate();
 
-    console.log(year + "-" + month.toString().padStart() + "-" + day.toString(2, 0));
+    // if (month < 10) month = "0" + month;
 
-    console.log(d.getTime());
+    // console.log(year + "-" + month.toString().padStart(2, 0) + "-" + day);
 
-    var d2 = new Date(1625047520257 - (3*60*60*24*1000));
-    console.log(d2);
+    // console.log(d.getTime());
+
+    // var d2 = new Date(d.getTime() - (5 * 60 * 60 * 24 * 1000));
+    // console.log(d2);
 
     function getIntervalDate(day) {
-        var now = new Date();
+      var now = new Date();
 
-        return new Date(now.getTiem() * (60* 60*24*1000*day));
+      return new Date(now.getTime() + (60 * 60 * 24 * 1000 * day));
     }
 
-    console.log(getIntervalDate)
-    </script>
+    console.log(getIntervalDate(-9));
+  </script>
 </body>
 
 </html>
