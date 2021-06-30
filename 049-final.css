@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serig;
+}
+#coke,
+#orange,
+#coffee,
+#water,
+#tea,
+#pokari,
+#pororo {
+    color: blue;
+}
