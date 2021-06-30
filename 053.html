@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 협업상에서 두가지에서 프로젝트에서 적용을 용이하게 해주는 것 044.html과 확인 -->
+    <button onclick="myFunction();">클릭</button>
+    <button id="btn">클릭2</button>
+    <select name="" id="sel">
+        <option value="a">a</option>
+        <option value="b">b</option>
+    </select>
+    <script>
+        function myFunction() {
+            console.log("버튼 클릭 - 함수 호출");
+        }
+
+
+        document.getElementById("btn").addEventListener("click", myFunction);
+    </script>
+</body>
+
+</html>
