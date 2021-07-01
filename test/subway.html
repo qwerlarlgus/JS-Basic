@@ -38,6 +38,17 @@
     //요금을 계산해서 화면에 보여준다.
     //지하철은 한방향으로만 운행합니다.
 
+    //출발역이 어느 역인지 기재 document.getElementById("start")value
+    //도착역이 어르 역인지 기재 document.getElementById("end")value
+    //출발역과 도착역이 같은지 확인 후 같으면 출발역과 도착역 같이 보여주고 오금계산X
+    //도착역과 출발역 사이의 몇개의 역이 있는지 계산
+    //출발역과 도착역 값을 역이름이 아니고, 인덱스번호로 만들면, 출발역과 도착역 사이 몇개 역이 있는지 확인
+    //도착역과 출발역 사이의 총 액수가 역마다 거리인 3170미터 곱한 이동거리 계산
+    //총 이동거리가 10km 이내면 기본요금 기본요금 성인1250원, 청소년720원, 어린이450원
+    //이동 거리가 10km 이내이면 성인이면 1250원
+    //이동 거리가 10km 이내이면 청소년이면 720원
+    //이동 거리가 10km 이내이면 어린이이면 450원
+
     function calculate() {
       const start = document.getElementById("start").value;
       const end = document.getElementById("end").value;
